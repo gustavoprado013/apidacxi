@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::apiResource('dacxi', 'ApiDacxiController');
+
+Route::get('status', 'ApiDacxiController@statusGecko');
