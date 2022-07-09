@@ -61,7 +61,7 @@ class ApiDacxiController extends Controller
     public function priceAtom()
     {
         $client = new CoinGeckoClient();
-        $data = $client->simple()->getPrice('0x,ethereum', 'usd,rub');
+        $data = $client->simple()->getPrice('0x,cosmos', 'usd,rub');
 
         return $data;
 
