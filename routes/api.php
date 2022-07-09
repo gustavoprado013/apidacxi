@@ -21,3 +21,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::apiResource('dacxi', 'ApiDacxiController');
 
 Route::get('status', 'ApiDacxiController@statusGecko');
+
+Route::get('price-bitcoin', 'ApiDacxiController@priceBitcoin');
+Route::get('price-dacxi', 'ApiDacxiController@priceDacxi');
+Route::get('price-eth', 'ApiDacxiController@priceEth');
+Route::get('price-atom', 'ApiDacxiController@priceAtom');
+Route::get('price-luna', 'ApiDacxiController@priceLuna');

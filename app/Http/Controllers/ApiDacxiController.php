@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 
+use Codenixsv\CoinGeckoApi\CoinGeckoClient;
+
 class ApiDacxiController extends Controller
 {
     /**
@@ -21,7 +23,57 @@ class ApiDacxiController extends Controller
 
     public function index()
     {
-        return response()->json('OK');
+        $client = new CoinGeckoClient();
+        $data = $client->ping();
+
+        return $data;
+        
+        //return response()->json('OK');
+    }
+
+    public function priceBitcoin()
+    {
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('0x,bitcoin', 'usd,rub');
+
+        return $data;
+
+    }
+
+    public function priceDacxi()
+    {
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('0x,dacxi', 'usd,rub');
+
+        return $data;
+
+    }
+
+    public function priceEth()
+    {
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('0x,ethereum', 'usd,rub');
+
+        return $data;
+
+    }
+
+    public function priceAtom()
+    {
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('0x,ethereum', 'usd,rub');
+
+        return $data;
+
+    }
+
+    public function priceLuna()
+    {
+        $client = new CoinGeckoClient();
+        $data = $client->simple()->getPrice('0x,terra-luna', 'usd,rub');
+
+        return $data;
+
     }
 
     /**
