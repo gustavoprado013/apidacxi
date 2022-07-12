@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Http;
 
 use Codenixsv\CoinGeckoApi\CoinGeckoClient;
 
+use App\Models\Coins;
+
 class ApiDacxiController extends Controller
 {
     /**
@@ -74,6 +76,11 @@ class ApiDacxiController extends Controller
 
         return $data;
 
+    }
+
+    public function storePrice(Request $request)
+    {
+        
     }
 
     /**

@@ -26,3 +26,5 @@ Route::get('price-dacxi', 'ApiDacxiController@priceDacxi');
 Route::get('price-eth', 'ApiDacxiController@priceEth');
 Route::get('price-atom', 'ApiDacxiController@priceAtom');
 Route::get('price-luna', 'ApiDacxiController@priceLuna');
+
+Route::post('store-price-any', 'ApiDacxiController@storePrice');

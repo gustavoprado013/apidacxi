@@ -1,13 +1,21 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+## About API DACXI with Laravel on Heroku
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+DACXI API
 
-## About Laravel
+This is an api project that queries cryptocurrency prices on the coingecko api. This project can be used for any purpose and is hosted on Heroku and Github. https://github.com/gustavoprado013/apidacxi
+
+The endpoints are:
+
+
+Check gecko status - https://apidacxi.herokuapp.com/api/status-gecko
+Bitcoin price - https://apidacxi.herokuapp.com/api/price-bitcoin
+Dacxi price - https://apidacxi.herokuapp.com/api/price-dacxi
+Ethereum price - https://apidacxi.herokuapp.com/api/price-eth
+Atom price - https://apidacxi.herokuapp.com/api/price-atom
+Luna price - https://apidacxi.herokuapp.com/api/price-luna
+
+
+LARAVEL
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 

@@ -17,6 +17,7 @@ class CreateCoinsTable extends Migration
             $table->id();
             $table->string('id_coin');
             $table->double('price_coin');
+            $table->double('price_usd');
             $table->timestamps();
         });
     }
